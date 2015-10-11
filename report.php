@@ -1,11 +1,12 @@
 <?php
 require_once("secrets.php");
-print "Ping: \n";
-api_request('/ping');
-print "\n\nCategories: \n";
-api_request('/categories?filter.includes=ID,Name');
-print "\n\nCourses: \n";
-api_request('/courses?filter.includes=ID,Title,URLs');
+// print "Ping: \n";
+// api_request('/ping');
+// print "\n\nCategories: \n";
+// api_request('/categories?filter.includes=ID,Name');
+// print "\n\nCourses: \n";
+// api_request('/courses?filter.includes=ID,Title,URLs');
+api_request('/course/380092');
 
 function api_request($api_endpoint = '') {
 	$timestamp = time();
